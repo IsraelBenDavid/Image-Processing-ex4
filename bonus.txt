@@ -1,0 +1,30 @@
+The beginning of the function is the same as the non-bonus function when
+the changes were made in the step of pasting the strips.
+
+In the first stage, I created three images:
+
+1. mask - Built as in the non-bonus function when instead of strips
+   from the picture I put strips of the same size in alternating colors
+   black and white
+
+2. Even strips - I pasted the Even strips in the same place they should
+   be according to the non-bonus function.
+   The difference is that I extended each strip on the right and left.
+   The meeting line of any two adjacent Even strips is the center of
+   the Odd strip that was supposed to be between them.
+
+3. Odd strips - I pasted the odd strips in the same place they should
+   be according to the non-bonus function.
+   The difference is that I extended each strip on the right and left.
+   The meeting line of any two adjacent odd strips is the center of the
+   even strip that was supposed to be between them.
+
+Finally after creating the images I performed pyramid blending for each
+ image channel and put the result in the panorama image.
+
+To adapt the process to images that are not powers of 2, I put each of
+ the 3 images in the smallest rectangle that contains the panorama and
+ that has sides that are powers of 2.
+
+After the pyramid blending I cut the rectangle back to the size of the
+ pyramid.
